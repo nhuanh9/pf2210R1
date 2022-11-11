@@ -9,7 +9,7 @@
 <body>
     <script>
         // Toán tử:
-        // Các loại: số học - gán - logic - so sánh - 3 ngôi
+        // Các loại: số học - gán - logic - so sánh
         // TT gán: 
         // 1. `=` để gán giá trị cho 1 biến
         // 2. `+=`; x = 10 => x+= 2 <=> x = x+2 = 12 
@@ -28,10 +28,17 @@
         alert(5*'2'+'1'+1) //  => 10 + '1' +1 => '101'+1 => '1011'
 
         // TTSS: >, <, >=, <=, ==, !=, ===, !==
-        let x = 5==5; true
-        let y = 7!=5; true
-        let z = 5=='5'; true
-        let t = 5==='5'; false
+        let x = 5==5;// true
+        let y = 7!=5; //true
+        let z = 5=='5'; //true
+        let t = 5==='5'; //false
+
+        // TTLogic: !, &&, ||, &, |
+        let x1 = !5==5; // => false
+        let y1 = 5==5 && 7>=8; // false
+        let z1 = 5==5 || 7>8; //true
+        let t1 = 5!=5 || 7>8; //false
+
     </script>
 </body>
 </html>
