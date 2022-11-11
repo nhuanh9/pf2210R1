@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Toán tử:
+        // Các loại: số học - gán - logic - so sánh - 3 ngôi
+        // TT gán: 
+        // 1. `=` để gán giá trị cho 1 biến
+        // 2. `+=`; x = 10 => x+= 2 <=> x = x+2 = 12 
+        // x = 10; => x*=9 => x = x*9 = 90
+        // x = 10; => x%=9 => x = x%9 = 10%9 = 1;
+
+        // TTSH: +, -, *, /, %, ** <Mũ: 3**10>
+        alert(5+'10'); // => 510
+        alert(5+'2'+1); // => '52'+1 => '521'
+        alert(5+2+'1') // => 71
+        // Thứ tự thực hiện phép: ưu tiên (), nhân chia, từ trái qua phải, theo từng cặp
+        // Cộng với chuỗi => chuỗi
+        // Các phép còn lại với chuỗi => số
+        alert(5*'2'+1) // => 10+1 = 11
+        alert('a'/10-1) // => Lỗi (NaN - Not a number)
+        alert(5*'2'+'1'+1) //  => 10 + '1' +1 => '101'+1 => '1011'
+    </script>
+</body>
+</html>
