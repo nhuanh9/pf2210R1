@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // if (1) 
+        // {
+        //     2
+        // } else {
+        //      3
+        // }
+        // 2 sẽ chạy khi 1 đúng.
+        // 3 sẽ chạy khi 1 sai.
+
+        // Phân loại học sinh:
+        // Nhập điểm
+        // <5: 'Yếu'
+        // <8: 'Khá'
+        // >=8: Giỏi
+
+        // -1, 1, 6, 8, 9, 11
+        let a = +prompt("Nhập vào 1 só: ");
+        if (a < 5 ) {
+            alert('yếu');
+        }
+        if (a >= 8) {
+            alert('Giỏi');
+        }
+
+        if (a>=5 && a<8) {
+            alert('TB');
+        }
+
+        if (a<0 || a>11) {
+            alert('Linh Ta Linh Tinh');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        let x = 10;
+        let y = 10 + (x++); => b1: y= 10+10 = 20 => b2: x = x+1 = 11
+        let z = 10 + (++x); => b1: x = x+1 = 12 => b2: y= 10+12 = 22
+
+        x=10
+        let t = 10 + (x--); => B1: t = 10+x =20 => B2: x = x-1;
+
+        x=10
+        let s = x++; => B1: s = x = 10 => B2: x = x+1 = 11
+        let w = 10 + (--x); => B1: x = x-1 = 10 => B2: w = 10+10 = 20
+        => x, s, w
+
+        x = 10;
+        let y = x++; => B1: y = x = 10 => B2: x = x+1 = 11;
+        let z = y + x + 1; => z = 10 + 11 + 1 = 21 + 1 = 22;
+
+        x = 10;
+        let y = (x++) + 2 +(++x);
+        // B1 y = (x++) + 2; => B1.1: y = x+2 = 12; B1.2: x = x+1 = 11;
+        // B2 y = y + (++x); => B2.1: x = x+1 = 12; B2.2: y = y+x = 24
+        => x, y
+
+        x = 10;
+        let y = (++x) + 2 +(x++);
+        => x, y
+    -->
+    <script>
+        let x = 10;
+        let y = (++x) + 2 + (x++);
+        // B1 y = (++x) + 2; => B1.1:  x = x+1 = 11; B1.2: y = 11+2=13;
+        // B2 y = y + (x++); => B2.1: y = y+x = 11+13 = 24; B2.2: x = x+1 = 12
+        alert(x + ' ' + y)
+    </script>
+</body>
+
+</html>
