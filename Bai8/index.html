@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        1. In ra 100 lan tu 'Hello'
+        2. In ra các số từ 1 -> 100
+        3. In ra các số chẵn từ 1-> 100
+        4. In ra các số chia hết 3 và 5
+        5. In ra các số lẻ từ a đến b. Nhập a, b từ prompt
+        6. Tính tổng các số từ đến b.
+        7. Tính tích các số chẵn từ a đến b.
+        8. Đếm số lượng số chia hết cho 7 từ a đến b
+        9. Tính TBC các số chia hết cho 6
+    -->
+    <!-- 
+        for(1, 2, 4) {
+            3
+        }
+        1: Khởi tạo biến đếm
+        2: Điều kiện tiếp tục
+        3: Câu lệnh cần lặp
+        4: Tăng biến đếm
+     -->
+    <script>
+        let a = +prompt('Nhập a');
+        let b = +prompt('Nhập b');
+        let tong = 0;
+        let dem = 0;
+        let tbc = 0;
+        for (let i = a; i <= b; i++) {
+            if (i % 6 == 0) {
+                dem++;
+                tong+=i;
+            }
+        }
+        tbc = tong/dem;
+        console.log(tbc);
+    </script>
+</body>
+
+</html>
